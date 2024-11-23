@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { Container, Row, Col, Carousel } from 'react-bootstrap';
+import {  Carousel } from 'react-bootstrap';
 import '../styles/Home.css';
 import jumbo from '../assets/jumbo.jpg';
 
@@ -7,6 +7,8 @@ const Home = () => {
   const headRef = useRef(null);
 
   useEffect(() => {
+    const currentHead = headRef.current; // Capture ref in a variable
+  
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
@@ -19,16 +21,18 @@ const Home = () => {
       },
       { threshold: 0.1 }
     );
-
-    if (headRef.current) {
-      observer.observe(headRef.current);
+  
+    if (currentHead) {
+      observer.observe(currentHead);
     }
+  
     return () => {
-      if (headRef.current) {
-        observer.unobserve(headRef.current);
+      if (currentHead) {
+        observer.unobserve(currentHead);
       }
     };
   }, []);
+  
 
   return (
     <div className="full-width-container">
