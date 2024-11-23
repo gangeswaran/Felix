@@ -1,0 +1,55 @@
+/* Contact.css */
+
+/* General Container Styling */
+.container {
+  font-family: 'Arial', sans-serif;
+}
+
+/* Header Styling */
+.media-jumbotron {
+  background-color: #f8f9fa;
+  padding: 30px 0;
+}
+
+.media-jumbotron h1 {
+  font-size: 2.5rem;
+  color: #4f0d0d;
+  margin-bottom: 0;
+}
+
+/* Horizontal Rules */
+hr {
+  border: none;
+  height: 2px;
+  background-color: #4f0d0d;
+  margin: 20px auto;
+}
+
+/* Inquiry Section Styling */
+.inquiry-section {
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.inquiry-section h4 {
+  font-size: 1.2rem;
+  color: #410707;
+  margin-bottom: 10px;
+}
+
+.inquiry-section p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+/* Links */
+.inquiry-section a {
+  color: #4f0d0d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.inquiry-section a:hover {
+  text-decoration: underline;
+}

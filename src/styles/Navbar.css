@@ -1,0 +1,85 @@
+/* Navbar.css */
+
+/* Base styles for the navbar */
+.custom-navbar {
+  height: 80px; /* Navbar height */
+  background-color: #fff; /* Background color for the navbar */
+  z-index: 1; /* Set navbar to be on top */
+  position: fixed; /* Keep navbar fixed on top */
+  width: 100%; /* Full width of the viewport */
+  color: #000000;
+}
+
+/* Navbar brand styles */
+.navbar-brand {
+  color: #000000; /* Text color for the brand */
+  letter-spacing: 3px;
+  margin-left: 20px;
+}
+
+/* Styles for nav links */
+.nav-item {
+  padding: 0 15px; /* Horizontal padding for nav items */
+  color: #000000; /* Text color for nav items */
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 30px;
+  letter-spacing: 2px;
+}
+
+/* Change text color on hover */
+.nav-item:hover {
+  color: darkred; /* Change color on hover */
+}
+
+/* Offcanvas styles */
+.custom-offcanvas {
+  background-color: #f8f9fa; /* Background color for offcanvas */
+}
+
+/* Full canvas styles */
+.full-canvas {
+  width: 200vw; /* Full width of the viewport */
+  height: 100vh; /* Full height of the viewport */
+  background-color: #fff; /* Set background color to your preference */
+  padding: 20px; /* Optional: Add padding */
+  box-shadow: none; /* Remove any box shadow */
+  overflow-y: auto; /* Enable vertical scrolling if needed */
+  border-right: 50px solid darkred !important;
+}
+
+/* Responsive styles */
+@media (min-width: 992px) {
+  .custom-offcanvas {
+    display: none; /* Hide offcanvas on desktop */
+  }
+}
+
+/* Styles for the desktop navigation links */
+.nav-desktop {
+  display: flex; /* Enable flexbox for horizontal layout */
+  margin-left: auto; /* Align to the right */
+}
+
+.nav-desktop .nav-item {
+  margin-left: 15px; /* Spacing between desktop nav items */
+}
+
+/* Optional: Transition effect for nav links */
+.nav-item {
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Optional: Custom scrollbar for offcanvas */
+.custom-offcanvas::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.custom-offcanvas::-webkit-scrollbar-thumb {
+  background-color: #007bff; /* Color of the scrollbar thumb */
+  border-radius: 4px; /* Rounded corners for scrollbar thumb */
+}
+
+.custom-offcanvas::-webkit-scrollbar-thumb:hover {
+  background-color: #0056b3; /* Darker color on hover */
+}

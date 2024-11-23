@@ -1,0 +1,258 @@
+/* About.css */
+
+/* Base styles for About section */
+.about-section {
+  background-color: #f8f9fa; /* Softer light background for better contrast */
+  padding: 40px 20px; /* Default padding */
+  border-radius: 15px; /* Rounded corners */
+  max-width: 1200px; /* Limit the width for larger screens */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin: auto; /* Center the section */
+}
+
+/* Profile image styling */
+.profile-image {
+  margin-top: 20px; /* Increased space at the top of the image */
+  width: 100%; /* Ensure it fits well in the column */
+  max-width: 200px; /* Maximum width for the image */
+  border-radius: 50%; /* Circular profile image */
+  border: 2px solid #007bff; /* Border to enhance visibility */
+}
+
+/* Heading styles */
+.about-section h2 {
+  color: #2c3e50; /* Darker navy for headers */
+  font-family: 'Montserrat', sans-serif; /* Modern font choice */
+  text-align: left; /* Aligning h2 to the left */
+  margin-bottom: 20px; /* Space below h2 */
+  font-size: 32px; /* Increased font size */
+  font-weight: 600; /* Semi-bold for better emphasis */
+}
+
+.about-section h3 {
+  margin-top: 30px; /* Space above h3 headers */
+  font-size: 28px; /* Font size for h3 */
+  font-weight: bold; /* Bold font */
+  color: #007bff; /* Bootstrap primary color */
+  text-align: left;
+}
+
+.about-section h4 {
+  margin-top: 20px; /* Space above h4 headers */
+  font-size: 24px; /* Font size for h4 */
+  font-weight: 500; /* Medium weight */
+  color: #34495e; /* Matching subheader color */
+  text-align: left;
+
+}
+
+/* Paragraph styling */
+.about-section p {
+  font-size: 16px; /* Font size for paragraphs */
+  color: #495057; /* Darker grey for paragraph text */
+  line-height: 1.6; /* Improved readability */
+  margin-bottom: 20px; /* Space below paragraphs */
+  text-align: justify;
+}
+
+/* List styling */
+.about-section ul {
+  list-style-type: disc; /* Change bullets for better style */
+  padding-left: 20px; /* Indent list */
+}
+
+.about-section ul li {
+  margin-bottom: 10px; /* Space between list items */
+}
+
+/* Link styling */
+.about-section a {
+  color: darkred; /* Bootstrap primary color for links */
+  text-decoration: none; /* No underline */
+  font-weight: bold; /* Bold links */
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.about-section a:hover {
+  text-decoration: underline; /* Underline on hover */
+  color: #0056b3; /* Darker shade on hover */
+}
+
+/* Testimonials styling */
+.about-section .testimonials {
+  margin-top: 30px; /* Space above testimonials */
+}
+
+.testimonials p {
+  font-style: italic; /* Italic for testimonials */
+  color: #6c757d; /* Light grey for testimonials */
+  padding-left: 15px; /* Indent testimonials */
+  border-left: 4px solid #007bff; /* Left border for emphasis */
+}
+
+/* Hover effect for about card */
+.about-card {
+  transition: transform 0.3s ease; /* Smooth hover transition */
+  cursor: pointer; /* Indicate it's interactive */
+}
+
+.about-card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+/* Affiliation Block */
+.affiliation-block {
+  padding: 40px 0;
+  background-color: #ffffff; /* Optional background */
+}
+
+/* Affiliation Item */
+.affiliation-item {
+  height: 200px; /* Set the height you prefer */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: flex-end; /* Align content to the right */
+  padding: 10px; /* Optional: Padding for better spacing */
+}
+
+.affiliation-item h5 {
+  font-weight: bold;
+  color:darkred; /* Bootstrap danger color */
+  margin-bottom: 5px;
+  text-align: center; /* Align heading to the right */
+}
+
+.affiliation-item p {
+  margin: 10px 0 0 0;
+  text-align: right; /* Align paragraph to the right */
+}
+
+.affiliation-item em {
+  font-style: italic;
+  color: #555;
+}
+
+/* Media Query for screens larger than 380px */
+@media (min-width: 380px) {
+  .about-section {
+    padding: 60px 30px; /* Increased padding */
+  }
+
+  .about-card {
+    padding: 50px; /* Padding for about card */
+  }
+
+  .about-card h2 {
+    font-size: 30px; /* Font size for h2 */
+  }
+
+  .about-card h3 {
+    font-size: 28px; /* Font size for h3 */
+  }
+
+  .about-card p {
+    font-size: 18px; /* Font size for paragraph */
+  }
+
+  .about-section h3 {
+    font-size: 28px; /* Font size for h3 in section */
+  }
+
+  .about-section h4 {
+    font-size: 24px; /* Font size for h4 in section */
+  }
+
+  .testimonials p {
+    font-size: 18px; /* Font size for testimonials */
+  }
+}
+
+/* Media Query for larger screens like tablets and desktops (min-width: 768px) */
+@media (min-width: 768px) {
+  .about-section {
+    padding: 70px 40px; /* Increased padding */
+  }
+
+  .about-card {
+    padding: 60px; /* Padding for about card */
+  }
+
+  .about-card h2 {
+    font-size: 34px; /* Font size for h2 */
+  }
+
+  .about-card h3 {
+    font-size: 32px; /* Font size for h3 */
+  }
+
+  .about-card p {
+    font-size: 20px; /* Font size for paragraph */
+  }
+
+  .about-section h3 {
+    font-size: 30px; /* Font size for h3 in section */
+  }
+
+  .about-section h4 {
+    font-size: 26px; /* Font size for h4 in section */
+  }
+
+  .testimonials p {
+    font-size: 20px; /* Font size for testimonials */
+  }
+}
+
+/* Media Query for large desktop screens (min-width: 1024px) */
+@media (min-width: 1024px) {
+  .about-section {
+    padding: 80px 60px; /* Increased padding */
+  }
+
+  .about-card {
+    padding: 70px; /* Padding for about card */
+  }
+
+  .about-card h2 {
+    font-size: 38px; /* Font size for h2 */
+  }
+
+  .about-card h3 {
+    font-size: 36px; /* Font size for h3 */
+  }
+
+  .about-card p {
+    font-size: 22px; /* Font size for paragraph */
+  }
+
+  .about-section h3 {
+    font-size: 32px; /* Font size for h3 in section */
+  }
+
+  .about-section h4 {
+    font-size: 28px; /* Font size for h4 in section */
+  }
+
+  .testimonials p {
+    font-size: 22px; /* Font size for testimonials */
+  }
+}
+
+/* Optional: Adjustments for smaller screens */
+@media (max-width: 767px) {
+  .profile-image {
+    max-width: 150px; /* Smaller max width on mobile */
+  }
+
+  .about-section h2 {
+    font-size: 24px; /* Slightly smaller h2 for mobile */
+  }
+
+  .about-section h3 {
+    font-size: 24px; /* Slightly smaller h3 for mobile */
+  }
+
+  .about-section h4 {
+    font-size: 20px; /* Slightly smaller h4 for mobile */
+  }
+}
